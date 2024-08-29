@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Summary</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Data Summary</h1>
+      <div>{{ summary|safe }}</div>
+      <form action="/generate_code/" method="post">
+        <input type="text" name="prompt" placeholder="Enter your prompt here" />
+        <button type="submit">Generate Code</button>
+      </form>
+      {% if plot_data %}
+      <h2>Generated Plot</h2>
+      <img src="data:image/png;base64,{{ plot_data }}" alt="Generated Plot" />
+      {% endif %} {% if error %}
+      <h2>Error</h2>
+      <p>{{ error }}</p>
+      {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sticky-summary {
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.interaction {
+  margin-top: 20px;
+}
+
+.plot {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.code-block {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
